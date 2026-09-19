@@ -435,8 +435,8 @@
   },
   {
    "name": "Tacos",
-   "cls": "fas fa-utensil-spoon",
-   "content": "\"\uf2e5\"",
+   "cls": "fas fa-pepper-hot",
+   "content": "\"\uf816\"",
    "rendered": true,
    "click": 62
   },
@@ -561,8 +561,8 @@
   },
   {
    "name": "Tacos",
-   "cls": "fas fa-utensil-spoon",
-   "content": "\"\uf2e5\"",
+   "cls": "fas fa-pepper-hot",
+   "content": "\"\uf816\"",
    "rendered": true,
    "click": 80
   },
