@@ -26,7 +26,7 @@ The repair keeps the original page structure and Font Awesome rendering. The fix
 | `index_guard_only.html` | Starter mappings plus runtime glyph fallback; isolates the guard behavior. |
 | `index_fixed.html` | Fixed page with the three missing mappings replaced, distinct Ramen/Soup bowl icons, and the runtime fallback retained. |
 | `index.html` | Deployed GitHub Pages entry point; byte-identical to `index_regenerated.html`. |
-| `index_regenerated.html` | Page regenerated from `prompt_fixed.md`; uses verified mappings and cancels stale timers. |
+| `index_regenerated.html` | Page regenerated from the dialogue-form code request in `prompt_fixed.md`; uses verified mappings and cancels stale timers. |
 | `check_icon_classes.py` | Downloads or reads `all.min.css` and checks exact glyph rules for every menu icon. |
 | `list_dish_icons.py` | Prints dish-to-icon mappings side by side for the semantic review. |
 | `run_experiment.py` | Runs seeded headless-browser clicks and measures CSS `::before` glyph rendering. |
