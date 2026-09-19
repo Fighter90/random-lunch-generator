@@ -1,28 +1,99 @@
-# Random Lunch Menu Generator — code-generation prompt (repaired)
+# Code Generation Brief: Repair the Random Lunch Generator
 
-## Q: I need to code random lunch menu recsys then publish this into github page. Let's first write the description readme.
-(unchanged — see week1/prompt.md)
+Repair the existing `index_original.html`. Do not rewrite the page, replace the UI with emoji, or change its visual structure.
 
-## Q: Now write index.html. Fix the icon problem by checking the library source, not your memory.
+## Required Workflow
 
-The previous version used icon class names that do not exist in the library. Do not repeat this.
+1. Pin Font Awesome to this exact URL:
 
-1. Load Font Awesome from exactly one pinned URL and treat it as the single source of truth:
+   ```text
    https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css
-2. Before you use ANY icon class, verify it against that file: download all.min.css and confirm that a rule
-   `.fa-<name>:before{content:"..."}` exists for it. Do not recall icon names from memory and do not
-   invent names by analogy (fa-pasta, fa-bowl, fa-bowl-hot do not exist). Print the list of the 12
-   verified names with their content codes before writing the HTML.
-3. Each icon must be relevant to its dish. If the Free set has no icon for a dish, choose the closest
-   food-related one and say so in a comment (e.g. Tacos → fa-pepper-hot); never pad with a random
-   utensil. Do not require that icons be unique across dishes — the Free set is too small for that.
-4. Keep every dish as one object { name, icon } and select it with ONE Math.random() index, so name and
-   icon can never diverge.
-5. After inserting the <i>, read getComputedStyle(el, '::before').content; if it is none or empty,
-   console.warn and fall back to fas fa-utensils. The user must never see a name without an icon.
-6. Store the pending setTimeout id and clearTimeout it on the next click, so that fast repeated clicks
-   cannot interleave two results.
-7. Keep the existing markup, ids and classes (#generateBtn, .lunch-display, .food-icon, .food-name);
-   this is a repair, not a rewrite.
+   ```
 
-Output: the complete index.html only.
+2. Before generating or editing the menu mappings, download that exact `all.min.css` file.
+
+3. Verify every icon class against the downloaded CSS before using it. An icon is verified only when the exact class has a glyph rule with non-empty `content`, such as:
+
+   ```css
+   .fa-pizza-slice:before{content:"\\f818"}
+   ```
+
+   Check exact class boundaries. Do not accept substring matches such as `fa-bowl` inside `fa-bowl-food`.
+
+4. Do not invent icon names or choose names from memory. If a proposed class is not found in the pinned CSS, reject it and choose another verified class.
+
+## Menu Mapping Rules
+
+- Keep one object per dish in the existing `lunchMenu` array.
+- Each object must have exactly this shape:
+
+  ```javascript
+  { name: "Dish name", icon: "fas fa-icon-name" }
+  ```
+
+- Every icon must be relevant to its dish.
+- If Font Awesome 6.4.0 Free has no exact dish icon, use the closest relevant food icon. For example:
+
+  ```javascript
+  { name: "Tacos", icon: "fas fa-pepper-hot" }
+  ```
+
+- Do not require icons to be unique. Reusing a verified, relevant icon is allowed when it is the best available match.
+- Do not use an icon merely because its name sounds plausible; it must pass the downloaded-CSS glyph check.
+
+## Interaction and Randomness Rules
+
+- Keep exactly one `Math.random()` call for each button click.
+- Compute the index with the existing menu length:
+
+  ```javascript
+  const randomIndex = Math.floor(Math.random() * lunchMenu.length);
+  ```
+
+- Do not reroll, retry, or make a second random draw when an icon fails verification or rendering.
+- Keep the existing loading state and 500 ms result delay unless a change is required for the timer fix.
+- Store the pending result timer in a variable.
+- On the next click, call `clearTimeout` on the pending result timer before scheduling the new result.
+- Ensure an old pending callback cannot overwrite the result selected by a newer click.
+
+## Runtime Glyph Fallback
+
+After inserting the selected icon `<i>` element, inspect the actual CSS-generated glyph:
+
+```javascript
+const iconElement = foodIcon.querySelector('i');
+const iconContent = getComputedStyle(iconElement, '::before').content;
+```
+
+If the content is `none`, `""`, or an empty string:
+
+1. Log a warning identifying the dish and requested icon class.
+2. Replace the icon element's class with:
+
+   ```text
+   fas fa-utensils
+   ```
+
+The fallback must happen after the `<i>` has been inserted and must not trigger another random selection.
+
+## Repair Constraints
+
+- Keep the existing element IDs, including `generateBtn`.
+- Keep the existing CSS class names, including `food-icon`, `food-name`, `lunch-display`, `generate-btn`, and `fade-in`.
+- Keep the existing DOM structure, layout, styling, copy, and Font Awesome `<i>`-based rendering approach.
+- Make the smallest targeted repair; do not convert the project to a framework, split files, or redesign the page.
+- Do not change the dish names unless required to preserve the existing behavior.
+
+## Acceptance Checks
+
+The generated result must satisfy all of the following:
+
+- The stylesheet URL is exactly the pinned Font Awesome 6.4.0 cdnjs URL.
+- Every `lunchMenu` icon class has an exact glyph rule in the downloaded `all.min.css`.
+- Every selected icon is semantically relevant or the closest verified food-icon substitute.
+- There is one `{name, icon}` object per dish.
+- There is one `Math.random()` call per click.
+- A missing runtime glyph produces a warning and displays `fas fa-utensils` instead.
+- A second click cancels the first click's pending result timer.
+- Five rapid clicks leave only the final click's result visible.
+- Existing IDs and classes remain unchanged.

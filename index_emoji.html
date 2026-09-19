@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Lunch Menu Generator</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
         * {
             margin: 0;
@@ -130,16 +129,16 @@
 </head>
 <body>
     <div class="container">
-        <h1><i class="fas fa-utensils"></i> Random Lunch Generator</h1>
+        <h1>🍽️ Random Lunch Generator</h1>
         <p class="description">Struggling to decide what to eat? Let us choose for you with just one click!</p>
 
         <div class="lunch-display">
-            <div class="food-icon"><i class="fas fa-question"></i></div>
+            <div class="food-icon">❓</div>
             <div class="food-name">What's for lunch?</div>
         </div>
 
         <button class="generate-btn" id="generateBtn">
-            <i class="fas fa-random"></i> Generate Lunch!
+            🎲 Generate Lunch!
         </button>
 
         <p class="footer">Click the button again if you can't decide!</p>
@@ -152,20 +151,20 @@
             const foodName = document.querySelector('.food-name');
             const lunchDisplay = document.querySelector('.lunch-display');
 
-            // Array of lunch options with corresponding Font Awesome icons
+            // Array of lunch options with corresponding emoji icons
             const lunchMenu = [
-                { name: "Pizza", icon: "fas fa-pizza-slice" },
-                { name: "Sushi", icon: "fas fa-fish" },
-                { name: "Burger", icon: "fas fa-hamburger" },
-                { name: "Salad", icon: "fas fa-leaf" },
-                { name: "Tacos", icon: "fas fa-utensil-spoon" },
-                { name: "Ramen", icon: "fas fa-bowl-food" },
-                { name: "Sandwich", icon: "fas fa-bread-slice" },
-                { name: "Pasta", icon: "fas fa-wheat-awn" },
-                { name: "Curry", icon: "fas fa-mortar-pestle" },
-                { name: "Steak", icon: "fas fa-drumstick-bite" },
-                { name: "Soup", icon: "fas fa-bowl-food" },
-                { name: "BBQ", icon: "fas fa-fire" }
+                { name: "Pizza", icon: "🍕" },
+                { name: "Sushi", icon: "🍣" },
+                { name: "Burger", icon: "🍔" },
+                { name: "Salad", icon: "🥗" },
+                { name: "Tacos", icon: "🌮" },
+                { name: "Ramen", icon: "🍜" },
+                { name: "Sandwich", icon: "🥪" },
+                { name: "Pasta", icon: "🍝" },
+                { name: "Curry", icon: "🍛" },
+                { name: "Steak", icon: "🥩" },
+                { name: "Soup", icon: "🍲" },
+                { name: "BBQ", icon: "🍖" }
             ];
 
             // Function to generate random lunch
@@ -178,20 +177,12 @@
                 const selectedLunch = lunchMenu[randomIndex];
 
                 // Briefly show loading state
-                foodIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                foodIcon.textContent = '⏳';
                 foodName.textContent = "Thinking...";
 
                 // After a short delay, show the selected lunch
                 setTimeout(() => {
-                    foodIcon.innerHTML = `<i class="${selectedLunch.icon}"></i>`;
-
-                    const iconElement = foodIcon.querySelector('i');
-                    const iconContent = getComputedStyle(iconElement, '::before').content;
-                    if (iconContent === 'none' || iconContent === '""' || iconContent === '') {
-                        console.warn(`Icon missing for ${selectedLunch.name}: ${selectedLunch.icon}`);
-                        iconElement.className = 'fas fa-utensils';
-                    }
-
+                    foodIcon.textContent = selectedLunch.icon;
                     foodName.textContent = selectedLunch.name;
 
                     // Add animation class
