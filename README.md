@@ -109,7 +109,7 @@ Compare every dish mapping and see the semantic changes:
 python3 list_dish_icons.py index_original.html index_fixed.html index_regenerated.html
 ```
 
-The expected mapping changes include `Tacos: fa-utensil-spoon -> fa-pepper-hot`, plus verified replacements for Ramen, Pasta, Curry, Steak, and Soup.
+The expected mapping changes are `Tacos: fa-utensil-spoon -> fa-pepper-hot`, `Ramen: fa-bowl-hot -> fa-bowl-rice`, `Pasta: fa-pasta -> fa-wheat-awn`, and `Soup: fa-bowl -> fa-bowl-food`.
 
 Check the rapid-click race. The original emits five delayed names; the regenerated page emits only the final result:
 
