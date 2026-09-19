@@ -10,7 +10,7 @@ Repository: https://github.com/Fighter90/random-lunch-generator
 
 The starter page displayed a dish name on every click but could display no icon for some dishes. Three Font Awesome 6.4.0 class names were absent from the stylesheet loaded by the page: `fa-bowl-hot`, `fa-pasta`, and `fa-bowl`. They affected Ramen, Pasta, and Soup, respectively, so 3 of 12 entries had missing glyphs and the expected failure rate was 25%. Tacos used `fa-utensil-spoon`, which rendered but was semantically wrong. Finally, every click created an independent 500 ms timer, so rapid clicks rendered several stale results in sequence.
 
-The repair keeps the original page structure and Font Awesome rendering. The fixed/deployed variant verifies the missing glyphs at runtime and falls back to `fas fa-utensils`; the regenerated variant additionally uses relevant verified replacements and cancels the prior pending result on a new click. The deployed `index.html` is byte-identical to `index_fixed.html`, while `index_regenerated.html` is the full prompt-driven repair.
+The repair keeps the original page structure and Font Awesome rendering. The fixed variant verifies the missing glyphs at runtime and falls back to `fas fa-utensils`; the regenerated/deployed variant additionally uses relevant verified replacements and cancels the prior pending result on a new click. The deployed `index.html` is byte-identical to `index_regenerated.html`.
 
 ## Files
 
@@ -24,10 +24,9 @@ The repair keeps the original page structure and Font Awesome rendering. The fix
 | `prompt_fixed.md` | Repaired code-generation brief; specifies CSS verification, relevant icons, fallback, one random draw, and timer cancellation. |
 | `index_original.html` | Untouched starter page; baseline for the three defects. |
 | `index_guard_only.html` | Starter mappings plus runtime glyph fallback; isolates the guard behavior. |
-| `index_fixed.html` | Fixed page with the three missing mappings replaced and the runtime fallback retained; the three-line repair variant. |
-| `index.html` | Deployed GitHub Pages entry point; byte-identical to `index_fixed.html`. |
+| `index_fixed.html` | Fixed page with the three missing mappings replaced, distinct Ramen/Soup bowl icons, and the runtime fallback retained. |
+| `index.html` | Deployed GitHub Pages entry point; byte-identical to `index_regenerated.html`. |
 | `index_regenerated.html` | Page regenerated from `prompt_fixed.md`; uses verified mappings and cancels stale timers. |
-| `index_emoji.html` | Scratch experiment showing the larger change required to replace Font Awesome with emoji. |
 | `check_icon_classes.py` | Downloads or reads `all.min.css` and checks exact glyph rules for every menu icon. |
 | `list_dish_icons.py` | Prints dish-to-icon mappings side by side for the semantic review. |
 | `run_experiment.py` | Runs seeded headless-browser clicks and measures CSS `::before` glyph rendering. |
@@ -82,7 +81,7 @@ python3 run_experiment.py index_fixed.html 100 42 fixed
 # icon failures: 0/100 = 0.000
 ```
 
-The deployed entry point is `index.html`, which is the fixed page:
+The deployed entry point is `index.html`, which is the regenerated page:
 
 ```bash
 python3 run_experiment.py index.html 100 42 deployed

@@ -38,8 +38,20 @@ Repair the existing `index_original.html`. Do not rewrite the page, replace the 
   { name: "Tacos", icon: "fas fa-pepper-hot" }
   ```
 
-- Do not require icons to be unique. Reusing a verified, relevant icon is allowed when it is the best available match.
+- Do not require icons to be globally unique when no verified relevant alternative exists. Reusing a verified, relevant icon is allowed only in that case.
 - Do not use an icon merely because its name sounds plausible; it must pass the downloaded-CSS glyph check.
+
+## Preservation and Auditing Rules
+
+8. Keep every original icon that exists in the pinned stylesheet and matches its dish. Change only an icon that is broken, missing from the stylesheet, or semantically wrong for its dish.
+
+9. Do not give two dishes the same icon when another verified food-related icon is available for one of them. Before writing the HTML, print an auditable table in this form:
+
+   ```text
+   dish -> candidate icons -> chosen icon -> glyph code
+   ```
+
+   Every candidate and the chosen icon must have an exact, non-empty glyph rule in the pinned CSS. The table must show the actual glyph code returned by the stylesheet, not a code recalled from memory.
 
 ## Interaction and Randomness Rules
 

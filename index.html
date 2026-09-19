@@ -151,15 +151,16 @@
             const foodIcon = document.querySelector('.food-icon');
             const foodName = document.querySelector('.food-name');
             const lunchDisplay = document.querySelector('.lunch-display');
+            const fallbackIcon = 'fas fa-utensils';
 
-            // Array of lunch options with corresponding Font Awesome icons
+            // Array of lunch options with verified Font Awesome 6.4.0 icons
             const lunchMenu = [
                 { name: "Pizza", icon: "fas fa-pizza-slice" },
                 { name: "Sushi", icon: "fas fa-fish" },
                 { name: "Burger", icon: "fas fa-hamburger" },
                 { name: "Salad", icon: "fas fa-leaf" },
-                { name: "Tacos", icon: "fas fa-utensil-spoon" },
-                { name: "Ramen", icon: "fas fa-bowl-food" },
+                { name: "Tacos", icon: "fas fa-pepper-hot" },
+                { name: "Ramen", icon: "fas fa-bowl-rice" },
                 { name: "Sandwich", icon: "fas fa-bread-slice" },
                 { name: "Pasta", icon: "fas fa-wheat-awn" },
                 { name: "Curry", icon: "fas fa-mortar-pestle" },
@@ -167,13 +168,19 @@
                 { name: "Soup", icon: "fas fa-bowl-food" },
                 { name: "BBQ", icon: "fas fa-fire" }
             ];
+            let pendingResult = null;
 
             // Function to generate random lunch
             function generateRandomLunch() {
+                if (pendingResult !== null) {
+                    clearTimeout(pendingResult);
+                    pendingResult = null;
+                }
+
                 // Remove fade-in class if it exists
                 lunchDisplay.classList.remove('fade-in');
 
-                // Get a random lunch option
+                // Get one random lunch option per click
                 const randomIndex = Math.floor(Math.random() * lunchMenu.length);
                 const selectedLunch = lunchMenu[randomIndex];
 
@@ -182,20 +189,19 @@
                 foodName.textContent = "Thinking...";
 
                 // After a short delay, show the selected lunch
-                setTimeout(() => {
+                pendingResult = setTimeout(() => {
                     foodIcon.innerHTML = `<i class="${selectedLunch.icon}"></i>`;
 
                     const iconElement = foodIcon.querySelector('i');
                     const iconContent = getComputedStyle(iconElement, '::before').content;
                     if (iconContent === 'none' || iconContent === '""' || iconContent === '') {
                         console.warn(`Icon missing for ${selectedLunch.name}: ${selectedLunch.icon}`);
-                        iconElement.className = 'fas fa-utensils';
+                        iconElement.className = fallbackIcon;
                     }
 
                     foodName.textContent = selectedLunch.name;
-
-                    // Add animation class
                     lunchDisplay.classList.add('fade-in');
+                    pendingResult = null;
                 }, 500);
             }
 

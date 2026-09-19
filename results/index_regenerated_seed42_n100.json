@@ -8,8 +8,8 @@
  "rows": [
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 1
   },
@@ -22,8 +22,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 3
   },
@@ -64,8 +64,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 9
   },
@@ -85,8 +85,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 12
   },
@@ -113,8 +113,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 16
   },
@@ -134,8 +134,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 19
   },
@@ -190,8 +190,8 @@
   },
   {
    "name": "Steak",
-   "cls": "fas fa-bacon",
-   "content": "\"\uf7e5\"",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
    "rendered": true,
    "click": 27
   },
@@ -225,15 +225,15 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 32
   },
   {
    "name": "Steak",
-   "cls": "fas fa-bacon",
-   "content": "\"\uf7e5\"",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
    "rendered": true,
    "click": 33
   },
@@ -246,8 +246,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 35
   },
@@ -309,8 +309,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 44
   },
@@ -365,15 +365,15 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 52
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 53
   },
@@ -400,8 +400,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 57
   },
@@ -442,8 +442,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 63
   },
@@ -470,8 +470,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 67
   },
@@ -491,8 +491,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 70
   },
@@ -512,8 +512,8 @@
   },
   {
    "name": "Steak",
-   "cls": "fas fa-bacon",
-   "content": "\"\uf7e5\"",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
    "rendered": true,
    "click": 73
   },
@@ -547,8 +547,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 78
   },
@@ -582,8 +582,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 83
   },
@@ -596,8 +596,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 85
   },
@@ -610,8 +610,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 87
   },
@@ -631,8 +631,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 90
   },
@@ -659,8 +659,8 @@
   },
   {
    "name": "Curry",
-   "cls": "fas fa-pepper-hot",
-   "content": "\"\uf816\"",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
    "rendered": true,
    "click": 94
   },
@@ -673,8 +673,8 @@
   },
   {
    "name": "Steak",
-   "cls": "fas fa-bacon",
-   "content": "\"\uf7e5\"",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
    "rendered": true,
    "click": 96
   },
@@ -694,15 +694,15 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 99
   },
   {
    "name": "Steak",
-   "cls": "fas fa-bacon",
-   "content": "\"\uf7e5\"",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
    "rendered": true,
    "click": 100
   }

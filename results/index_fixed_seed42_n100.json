@@ -8,8 +8,8 @@
  "rows": [
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 1
   },
@@ -64,8 +64,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 9
   },
@@ -134,8 +134,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 19
   },
@@ -225,8 +225,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 32
   },
@@ -246,8 +246,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 35
   },
@@ -400,8 +400,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 57
   },
@@ -442,8 +442,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 63
   },
@@ -547,8 +547,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 78
   },
@@ -596,8 +596,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 85
   },
@@ -631,8 +631,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 90
   },
@@ -694,8 +694,8 @@
   },
   {
    "name": "Ramen",
-   "cls": "fas fa-bowl-food",
-   "content": "\"\ue4c6\"",
+   "cls": "fas fa-bowl-rice",
+   "content": "\"\ue2eb\"",
    "rendered": true,
    "click": 99
   },
