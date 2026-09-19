@@ -21,7 +21,7 @@ The repair keeps the original page structure and Font Awesome rendering. The fix
 | `OPENCODE_WALKTHROUGH.md` | Project walkthrough and investigation notes. |
 | `requirements.txt` | Python test dependency pin, used before running Playwright checks. |
 | `prompt.md` | Original request and generated README prompt; used as the prompt-root-cause reference. |
-| `prompt_fixed.md` | Repaired code-generation brief; specifies CSS verification, relevant icons, fallback, one random draw, and timer cancellation. |
+| `prompt_fixed.md` | Analogue of the original `prompt.md`: preserves the original README dialogue and adds the missing verified single-file code request and answer. |
 | `index_original.html` | Untouched starter page; baseline for the three defects. |
 | `index_guard_only.html` | Starter mappings plus runtime glyph fallback; isolates the guard behavior. |
 | `index_fixed.html` | Fixed page with the three missing mappings replaced, distinct Ramen/Soup bowl icons, and the runtime fallback retained. |
