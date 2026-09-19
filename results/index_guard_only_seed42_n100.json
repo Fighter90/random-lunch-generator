@@ -1,0 +1,710 @@
+{
+ "label": "guard-only",
+ "file": "index_guard_only.html",
+ "clicks": 100,
+ "seed": 42,
+ "failures": 0,
+ "rate": 0.0,
+ "rows": [
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 1
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 2
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 3
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 4
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 5
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 6
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 7
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 8
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 9
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 10
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 11
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 12
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 13
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 14
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 15
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 16
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 17
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 18
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 19
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 20
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 21
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 22
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 23
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 24
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 25
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 26
+  },
+  {
+   "name": "Steak",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
+   "rendered": true,
+   "click": 27
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 28
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 29
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 30
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 31
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 32
+  },
+  {
+   "name": "Steak",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
+   "rendered": true,
+   "click": 33
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 34
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 35
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 36
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 37
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 38
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 39
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 40
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 41
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 42
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 43
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 44
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 45
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 46
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 47
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 48
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 49
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 50
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 51
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 52
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 53
+  },
+  {
+   "name": "BBQ",
+   "cls": "fas fa-fire",
+   "content": "\"\uf06d\"",
+   "rendered": true,
+   "click": 54
+  },
+  {
+   "name": "Sushi",
+   "cls": "fas fa-fish",
+   "content": "\"\uf578\"",
+   "rendered": true,
+   "click": 55
+  },
+  {
+   "name": "BBQ",
+   "cls": "fas fa-fire",
+   "content": "\"\uf06d\"",
+   "rendered": true,
+   "click": 56
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 57
+  },
+  {
+   "name": "BBQ",
+   "cls": "fas fa-fire",
+   "content": "\"\uf06d\"",
+   "rendered": true,
+   "click": 58
+  },
+  {
+   "name": "Sushi",
+   "cls": "fas fa-fish",
+   "content": "\"\uf578\"",
+   "rendered": true,
+   "click": 59
+  },
+  {
+   "name": "Sushi",
+   "cls": "fas fa-fish",
+   "content": "\"\uf578\"",
+   "rendered": true,
+   "click": 60
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 61
+  },
+  {
+   "name": "Tacos",
+   "cls": "fas fa-utensil-spoon",
+   "content": "\"\uf2e5\"",
+   "rendered": true,
+   "click": 62
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 63
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 64
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 65
+  },
+  {
+   "name": "Pizza",
+   "cls": "fas fa-pizza-slice",
+   "content": "\"\uf818\"",
+   "rendered": true,
+   "click": 66
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 67
+  },
+  {
+   "name": "BBQ",
+   "cls": "fas fa-fire",
+   "content": "\"\uf06d\"",
+   "rendered": true,
+   "click": 68
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 69
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 70
+  },
+  {
+   "name": "Burger",
+   "cls": "fas fa-hamburger",
+   "content": "\"\uf805\"",
+   "rendered": true,
+   "click": 71
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 72
+  },
+  {
+   "name": "Steak",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
+   "rendered": true,
+   "click": 73
+  },
+  {
+   "name": "Sushi",
+   "cls": "fas fa-fish",
+   "content": "\"\uf578\"",
+   "rendered": true,
+   "click": 74
+  },
+  {
+   "name": "BBQ",
+   "cls": "fas fa-fire",
+   "content": "\"\uf06d\"",
+   "rendered": true,
+   "click": 75
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 76
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 77
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 78
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 79
+  },
+  {
+   "name": "Tacos",
+   "cls": "fas fa-utensil-spoon",
+   "content": "\"\uf2e5\"",
+   "rendered": true,
+   "click": 80
+  },
+  {
+   "name": "Pasta",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 81
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 82
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 83
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 84
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 85
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 86
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 87
+  },
+  {
+   "name": "BBQ",
+   "cls": "fas fa-fire",
+   "content": "\"\uf06d\"",
+   "rendered": true,
+   "click": 88
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 89
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 90
+  },
+  {
+   "name": "Sandwich",
+   "cls": "fas fa-bread-slice",
+   "content": "\"\uf7ec\"",
+   "rendered": true,
+   "click": 91
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 92
+  },
+  {
+   "name": "Sushi",
+   "cls": "fas fa-fish",
+   "content": "\"\uf578\"",
+   "rendered": true,
+   "click": 93
+  },
+  {
+   "name": "Curry",
+   "cls": "fas fa-mortar-pestle",
+   "content": "\"\uf5a7\"",
+   "rendered": true,
+   "click": 94
+  },
+  {
+   "name": "Salad",
+   "cls": "fas fa-leaf",
+   "content": "\"\uf06c\"",
+   "rendered": true,
+   "click": 95
+  },
+  {
+   "name": "Steak",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
+   "rendered": true,
+   "click": 96
+  },
+  {
+   "name": "Soup",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 97
+  },
+  {
+   "name": "Sushi",
+   "cls": "fas fa-fish",
+   "content": "\"\uf578\"",
+   "rendered": true,
+   "click": 98
+  },
+  {
+   "name": "Ramen",
+   "cls": "fas fa-utensils",
+   "content": "\"\uf2e7\"",
+   "rendered": true,
+   "click": 99
+  },
+  {
+   "name": "Steak",
+   "cls": "fas fa-drumstick-bite",
+   "content": "\"\uf6d7\"",
+   "rendered": true,
+   "click": 100
+  }
+ ]
+}

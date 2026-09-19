@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Lunch Menu Generator</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #ff9a9e 0%, #fad0c4 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            width: 90%;
+            max-width: 500px;
+            padding: 30px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #ff6b6b;
+            margin-bottom: 20px;
+            font-size: 2.2rem;
+        }
+
+        .description {
+            color: #555;
+            margin-bottom: 30px;
+            line-height: 1.6;
+        }
+
+        .lunch-display {
+            background-color: #f8f9fa;
+            border-radius: 15px;
+            padding: 30px;
+            margin: 25px 0;
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            transition: all 0.3s ease;
+        }
+
+        .food-icon {
+            font-size: 4rem;
+            margin-bottom: 15px;
+            color: #ff6b6b;
+        }
+
+        .food-name {
+            font-size: 2rem;
+            color: #333;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .generate-btn {
+            background-color: #ff6b6b;
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 15px 40px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.4);
+        }
+
+        .generate-btn:hover {
+            background-color: #ff5252;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.5);
+        }
+
+        .generate-btn:active {
+            transform: translateY(0);
+        }
+
+        .footer {
+            margin-top: 30px;
+            color: #777;
+            font-size: 0.9rem;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.5s ease forwards;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 1.8rem;
+            }
+
+            .food-name {
+                font-size: 1.6rem;
+            }
+
+            .generate-btn {
+                padding: 12px 30px;
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fas fa-utensils"></i> Random Lunch Generator</h1>
+        <p class="description">Struggling to decide what to eat? Let us choose for you with just one click!</p>
+
+        <div class="lunch-display">
+            <div class="food-icon"><i class="fas fa-question"></i></div>
+            <div class="food-name">What's for lunch?</div>
+        </div>
+
+        <button class="generate-btn" id="generateBtn">
+            <i class="fas fa-random"></i> Generate Lunch!
+        </button>
+
+        <p class="footer">Click the button again if you can't decide!</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const generateBtn = document.getElementById('generateBtn');
+            const foodIcon = document.querySelector('.food-icon');
+            const foodName = document.querySelector('.food-name');
+            const lunchDisplay = document.querySelector('.lunch-display');
+
+            // Array of lunch options with corresponding Font Awesome icons
+            const lunchMenu = [
+                { name: "Pizza", icon: "fas fa-pizza-slice" },
+                { name: "Sushi", icon: "fas fa-fish" },
+                { name: "Burger", icon: "fas fa-hamburger" },
+                { name: "Salad", icon: "fas fa-leaf" },
+                { name: "Tacos", icon: "fas fa-utensil-spoon" },
+                { name: "Ramen", icon: "fas fa-bowl-hot" },
+                { name: "Sandwich", icon: "fas fa-bread-slice" },
+                { name: "Pasta", icon: "fas fa-pasta" },
+                { name: "Curry", icon: "fas fa-mortar-pestle" },
+                { name: "Steak", icon: "fas fa-drumstick-bite" },
+                { name: "Soup", icon: "fas fa-bowl" },
+                { name: "BBQ", icon: "fas fa-fire" }
+            ];
+
+            // Function to generate random lunch
+            function generateRandomLunch() {
+                // Remove fade-in class if it exists
+                lunchDisplay.classList.remove('fade-in');
+
+                // Get a random lunch option
+                const randomIndex = Math.floor(Math.random() * lunchMenu.length);
+                const selectedLunch = lunchMenu[randomIndex];
+
+                // Briefly show loading state
+                foodIcon.innerHTML = '<i class="fas fa-spinner fa-spin"></i>';
+                foodName.textContent = "Thinking...";
+
+                // After a short delay, show the selected lunch
+                setTimeout(() => {
+                    foodIcon.innerHTML = `<i class="${selectedLunch.icon}"></i>`;
+
+                    const iconElement = foodIcon.querySelector('i');
+                    const iconContent = getComputedStyle(iconElement, '::before').content;
+                    if (iconContent === 'none' || iconContent === '""' || iconContent === '') {
+                        console.warn(`Icon missing for ${selectedLunch.name}: ${selectedLunch.icon}`);
+                        iconElement.className = 'fas fa-utensils';
+                    }
+
+                    foodName.textContent = selectedLunch.name;
+
+                    // Add animation class
+                    lunchDisplay.classList.add('fade-in');
+                }, 500);
+            }
+
+            // Add click event to button
+            generateBtn.addEventListener('click', generateRandomLunch);
+
+            // Generate a random lunch on page load
+            generateRandomLunch();
+        });
+    </script>
+</body>
+</html>
